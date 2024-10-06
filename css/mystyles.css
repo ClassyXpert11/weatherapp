@@ -1,0 +1,241 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.body {
+  background-color: #121212;
+}
+
+.hide {
+  display: none;
+}
+
+#the-current-city {
+  width: clamp(20%, 40%, 60%);
+  background-color: #008080;
+  border: 4px solid #004e4e;
+  border-radius: 10px;
+  margin: 10px auto;
+  padding: 12px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.todays-weather {
+  padding: 30px;
+  margin: 5px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 25%;
+  text-align: center;
+  background-color: #2d2d2d;
+  color: white;
+  border: 4px solid #004e4e;
+  border-radius: 10px;
+  font-size: clamp(1em, 1.3em, 3em);
+}
+
+/* when the user hovers over the div tag */
+.todays-weather:hover {
+  background-color: #008080;
+  color: #000;
+  transition: ease-in-out 0.3s;
+}
+
+/* when their mouse leaves the div tag */
+.todays-weather:not(:hover) {
+  transition: ease-in-out 0.5s;
+}
+
+.daily-forecast {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.middle-tags {
+  padding: 20px 0px;
+  margin: 15px 10px;
+  text-align: center;
+  background-color: #2d2d2d;
+  color: white;
+  border: 4px solid #004e4e;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: clamp(1em, 1.3em, 3em);
+}
+
+.middle-tags:hover {
+  background-color: #008080;
+  color: #000;
+  transition: ease-in-out 0.3s;
+}
+
+.middle-tags:not(:hover) {
+  transition: ease-in-out 0.5s;
+}
+
+.hourly-forecast {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+}
+
+.forecasts {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 0px 5px;
+}
+
+.hourly-cards {
+  padding: 15px 0px;
+  margin: 15px 8px;
+  align-items: center;
+  text-align: center;
+  background-color: #2d2d2d;
+  color: white;
+  border: 3px solid #004e4e;
+  border-radius: 10px;
+}
+
+.hourly-cards:hover {
+  background-color: #008080;
+  color: #000;
+  transition: ease-in-out 0.3s;
+}
+
+.hourly-cards:not(:hover) {
+  transition: ease-in-out 0.5s;
+}
+
+.tomorrow-hourly-forecast {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+}
+
+.overmorrow-hourly-forecast {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+}
+
+.nav-bar {
+  background-color: #008080;
+  border: 5px solid #004e4e;
+  border-radius: 10px;
+  margin: 5px auto;
+  padding: 5px;
+  width: clamp(40%, 65%, 80%);
+  height: clamp(35px, 70px, 105px);
+  align-items: center;
+  justify-content: left;
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-bar h3 {
+  margin-right: 380px;
+}
+
+/* fa means Font Awesome. 
+its where i go the icons from.
+fa-solid is all of them because its the free version */
+.fa-solid {
+  margin: 0 15px;
+}
+
+/* fa-sun is customising the sun specifically */
+.fa-sun {
+  color: #000000;
+}
+
+/* when the mouse hovers over it */
+.fa-sun:hover {
+  color: #e3e015;
+  transition: ease-in-out 0.3s;
+}
+
+/* when the mouse is no longer hovering, it slowly changes back instead of instantly.
+makes it look better */
+.fa-sun:not(:hover) {
+  transition: ease-in-out 0.5s;
+}
+
+.fa-house-chimney {
+  color: #000;
+}
+
+.fa-house-chimney:hover {
+  color: #c91f1f;
+  transition: ease-in-out 0.3s;
+}
+
+.fa-house-chimney:not(:hover) {
+  transition: ease-in-out 0.5s;
+}
+
+.fa-magnifying-glass {
+  color: #000;
+}
+
+.fa-magnifying-glass:hover {
+  color: #c91f1f;
+  transition: ease-in-out 0.3s;
+}
+
+.fa-magnifying-glass:not(:hover) {
+  transition: ease-in-out 0.5s;
+}
+
+.search-bar {
+  background-color: #008080;
+  border: 4px solid #004e4e;
+  border-radius: 10px;
+  margin: 7px auto;
+  padding: 10px;
+  width: clamp(40%, 50%, 75%);
+  display: flex;
+} 
+
+.btnSearch {
+  background-color: transparent;
+  width: clamp(10%, 20%, 30%);
+  border: none;
+  border-left: 2px solid #004e4e;
+  margin: 0 7px;
+  padding: 20px 50px;
+  font-size: 2em;
+}
+
+.fa-angles-right {
+  color: #000;
+}
+.fa-angles-right:hover {
+  color: #a900a3;
+  transition: ease-in-out 0.3s;
+}
+
+.fa-angles-right:not(:hover) {
+  transition: ease-in-out 0.5s;
+
+}
+
+.location {
+  border-right: 2px solid #004e4e;
+  width: clamp(10%, 20%, 30%);  
+  padding: 20px 5px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 0 7px;
+  font-weight: 600;
+}
+
+.search-area {
+  width: 60%;
+  margin: 5px 10px;
+  font-size: 1.6em;
+}
